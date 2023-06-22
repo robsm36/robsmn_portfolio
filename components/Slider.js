@@ -32,14 +32,14 @@ export default function Slider() {
             <div 
             style={{backgroundImage: `url(${projetos[currentIndex].img})`}}
             className='w-full h-[500px] rounded-2xl bg-contain bg-center hover:shadow-xl group-hover:scale-[1.02] cursor-pointer duration-500'/>
-            <div className='hidden group-hover:block absolute top-[40%] -translate-x-0 -translate-y-[-50%] left-5 z-10 text-2xl rounded-full p2 bg-black/20 text-white cursor-pointer'>
+            <div className='lg:hidden group-hover:block absolute top-[40%] -translate-x-0 -translate-y-[-50%] left-5 z-10 text-2xl rounded-full p2 bg-black/20 text-white cursor-pointer'>
                 <BsChevronCompactLeft onClick={slideLeft} size={30}/>
             </div>
-            <div className='hidden group-hover:block absolute top-[40%] -translate-x-0 -translate-y-[-50%] right-5 text-2xl rounded-full p2 bg-black/20 text-white cursor-pointer'>
+            <div className='lg:hidden group-hover:block absolute top-[40%] -translate-x-0 -translate-y-[-50%] right-5 text-2xl rounded-full p2 bg-black/20 text-white cursor-pointer'>
                 <BsChevronCompactRight onClick={slideRight} size={30}/>
             </div>
             <a href={projetos[currentIndex].url} target='_blank'>
-                <div className='hidden group-hover:block absolute top-10 w-[85%] h-[80%] right-[7.5%] cursor-pointer'/>
+                <div className='hidden group-hover:block absolute top-10 w-[85%] h-[80%] right-[7.5%] cursor-pointer border-2 mr-4'/>
             </a>
             <p className="text-sm leading-2 mt-2 text-center text-gray-800 lg:max-w-full mx-auto dark:text-white">{projetos[currentIndex].txt}</p>
         </div>
