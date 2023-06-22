@@ -39,7 +39,7 @@ export default function Slider() {
                 <BsChevronCompactRight onClick={slideRight} size={30}/>
             </div>
             <a href={projetos[currentIndex].url} target='_blank'>
-                <div className='hidden group-hover:block absolute top-10 w-[85%] h-[80%] right-[7.5%] cursor-pointer border-2 mr-4'/>
+                <div className='hidden group-hover:block absolute top-10 w-[85%] h-[80%] right-[7.5%] cursor-pointer mr-4'/>
             </a>
             <p className="text-sm leading-2 mt-2 text-center text-gray-800 lg:max-w-full mx-auto dark:text-white">{projetos[currentIndex].txt}</p>
         </div>
