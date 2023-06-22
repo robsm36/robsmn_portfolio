@@ -29,7 +29,9 @@ export default function Slider() {
             </a>
         </div>
         <div className="max-w-[1400px] h-fit w-full m-auto py-6 px-4 relative group">
-            <div className={`w-full h-[500px] ${projetos[currentIndex].img} rounded-2xl bg-contain bg-center hover:shadow-xl group-hover:scale-[1.02] cursor-pointer duration-500`}/>
+            <div 
+            style={{backgroundImage: `url(${projetos[currentIndex].img})`}}
+            className='w-full h-[500px] rounded-2xl bg-contain bg-center hover:shadow-xl group-hover:scale-[1.02] cursor-pointer duration-500'/>
             <div className='hidden group-hover:block absolute top-[40%] -translate-x-0 -translate-y-[-50%] left-5 z-10 text-2xl rounded-full p2 bg-black/20 text-white cursor-pointer'>
                 <BsChevronCompactLeft onClick={slideLeft} size={30}/>
             </div>
